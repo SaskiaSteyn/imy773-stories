@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Story Reels</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+
+    <body>
+        <!-- Password Screen -->
+        <div id="passwordScreen" class="password-screen">
+            <div class="password-container">
+                <h2>Enter Text Password</h2>
+                <div class="otp-inputs">
+                    <input
+                        type="text"
+                        class="otp-input"
+                        maxlength="1"
+                        inputmode="text"
+                    />
+                    <input
+                        type="text"
+                        class="otp-input"
+                        maxlength="1"
+                        inputmode="text"
+                    />
+                    <input
+                        type="text"
+                        class="otp-input"
+                        maxlength="1"
+                        inputmode="text"
+                    />
+                    <input
+                        type="text"
+                        class="otp-input"
+                        maxlength="1"
+                        inputmode="text"
+                    />
+                    <input
+                        type="text"
+                        class="otp-input"
+                        maxlength="1"
+                        inputmode="text"
+                    />
+                    <input
+                        type="text"
+                        class="otp-input"
+                        maxlength="1"
+                        inputmode="text"
+                    />
+                    <input
+                        type="text"
+                        class="otp-input"
+                        maxlength="1"
+                        inputmode="text"
+                    />
+                    <input
+                        type="text"
+                        class="otp-input"
+                        maxlength="1"
+                        inputmode="text"
+                    />
+                    <input
+                        type="text"
+                        class="otp-input"
+                        maxlength="1"
+                        inputmode="text"
+                    />
+                </div>
+                <button id="passwordButton">Unlock</button>
+                <p
+                    id="passwordError"
+                    style="
+                        color: gray;
+                        display: none;
+                        margin-top: 10px;
+                        font-size: 0.9rem;
+                    "
+                >
+                    Incomplete code
+                </p>
+            </div>
+        </div>
+
+        <!-- Instagram Stories Interface -->
+        <div id="storiesContent" class="stories-hidden">
+            <div class="stories-feed">
+                <!-- Left Other Stories -->
+                <div class="other-stories-column left">
+                    <div class="other-story" data-user="0">
+                        <img src="images/stories/girly-pop7.png" alt="Story" />
+                        <div class="other-story-overlay">
+                            <div class="other-story-avatar"></div>
+                            <div class="other-story-name">girly_pop7</div>
+                        </div>
+                    </div>
+                    <div class="other-story" data-user="1">
+                        <img src="images/stories/travel101.png" alt="Story" />
+                        <div class="other-story-overlay">
+                            <div class="other-story-avatar"></div>
+                            <div class="other-story-name">travel101</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Story -->
+                <div class="main-story">
+                    <!-- Progress Bars -->
+                    <div class="progress-bars">
+                        <div class="progress-bar" id="progressBar0"></div>
+                        <div class="progress-bar" id="progressBar1"></div>
+                        <div class="progress-bar" id="progressBar2"></div>
+                        <div class="progress-bar" id="progressBar3"></div>
+                        <div class="progress-bar" id="progressBar4"></div>
+                        <div class="progress-bar" id="progressBar5"></div>
+                        <div class="progress-bar" id="progressBar6"></div>
+                        <div class="progress-bar" id="progressBar7"></div>
+                        <div class="progress-bar" id="progressBar8"></div>
+                        <div class="progress-bar" id="progressBar9"></div>
+                        <div class="progress-bar" id="progressBar10"></div>
+                        <div class="progress-bar" id="progressBar11"></div>
+                    </div>
+
+                    <!-- Story Header -->
+                    <div class="story-header">
+                        <div class="story-user">
+                            <div class="user-avatar"></div>
+                            <div class="user-info">
+                                <div class="user-name">the_velvet_hour</div>
+                                <div class="story-time">14h</div>
+                            </div>
+                        </div>
+                        <div class="header-actions">
+                            <span>⋯</span>
+                        </div>
+                    </div>
+
+                    <!-- Story Image -->
+                    <div class="story-image-container">
+                        <img
+                            id="storyImage"
+                            src="images/stories/temp.png"
+                            alt="Story image"
+                            class="story-image"
+                        />
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <div class="story-navigation">
+                        <button id="prevStory" class="nav-button nav-prev">
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path d="M13 15l-5-5 5-5" />
+                            </svg>
+                        </button>
+                        <button id="nextStory" class="nav-button nav-next">
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path d="M7 15l5-5-5-5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Other Stories -->
+                <div class="other-stories-column right">
+                    <div class="other-story" data-user="2">
+                        <img
+                            src="images/stories/cat-with-a-hat.png"
+                            alt="Story"
+                        />
+                        <div class="other-story-overlay">
+                            <div class="other-story-avatar"></div>
+                            <div class="other-story-name">cat_with_a_hat</div>
+                        </div>
+                    </div>
+                    <div class="other-story" data-user="3">
+                        <img src="images/stories/gainzzz.png" alt="Story" />
+                        <div class="other-story-overlay">
+                            <div class="other-story-avatar"></div>
+                            <div class="other-story-name">gainzzzzz</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
