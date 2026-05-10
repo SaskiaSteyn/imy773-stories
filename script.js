@@ -82,17 +82,16 @@ function showPasswordError() {
 const storyPaths = [
     './images/stories/her-stories/1-cover.png',
     './images/stories/her-stories/nerina-koi.png',
-    './images/stories/her-stories/nerina-balcony.png',
+    './images/stories/her-stories/nerina-close-up.png',
     './images/stories/her-stories/nerina-fruit-shop.png',
     './images/stories/her-stories/nerina-swimming.png',
-    './images/stories/her-stories/nerina-elephant.png',
-    './images/stories/her-stories/nerina-fruit-shop.png',
+    './images/stories/her-stories/nerina-yellow-flower.png',
     './images/stories/her-stories/nerina-fruit.png',
     './images/stories/her-stories/nerina-hat.png',
     './images/stories/her-stories/nerina-noodles.png',
     './images/stories/her-stories/nerina-tea.png',
     './images/stories/her-stories/nerina-temple.png',
-    './images/stories/her-stories/nerina-beach.png'
+    './images/stories/her-stories/nerina-flower.png'
 ]
 
 let currentStory = 0
